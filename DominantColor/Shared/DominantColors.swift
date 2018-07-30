@@ -85,7 +85,7 @@ public enum GroupingAccuracy {
     case high       // CIE 2000 - Additional corrections for neutral colors, lightness, chroma, and hue
 }
 
-struct DefaultParameterValues {
+public struct DefaultParameterValues {
     static var maxSampledPixels: Int = 1000
     static var accuracy: GroupingAccuracy = .medium
     static var seed: UInt32 = 3571
