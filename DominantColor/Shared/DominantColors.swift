@@ -86,10 +86,10 @@ public enum GroupingAccuracy {
 }
 
 public struct DefaultParameterValues {
-    static var maxSampledPixels: Int = 1000
-    static var accuracy: GroupingAccuracy = .medium
-    static var seed: UInt32 = 3571
-    static var memoizeConversions: Bool = false
+    public static var maxSampledPixels: Int = 1000
+    public static var accuracy: GroupingAccuracy = .medium
+    public static var seed: UInt32 = 3571
+    public static var memoizeConversions: Bool = false
 }
 
 /**
