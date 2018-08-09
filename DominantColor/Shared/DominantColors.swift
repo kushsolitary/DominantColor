@@ -141,7 +141,7 @@ public func dominantColorsInImage(
         return memoizeConversions ? memoize(f) : f
     }()
     enumerateRGBAContext(context) { (_, _, pixel) in
-        if ((pixel.a == UInt8.max) && (pixel.r <= 250 && pixel.g <= 250 && pixel.b <= 250) && (pixel.r > 4 && pixel.g > 4 && pixel.b > 4)) {
+        if pixel.a == UInt8.max {
             labValues.append(RGBToLAB(pixel))
         }
     }
